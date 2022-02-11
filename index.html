@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>BMI Calculator </title>
+  <link rel="stylesheet" href="./style.css">
+<!-- Lilitha -->
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="box">
+    <h1>BMI Calculator</h1>
+    <div class="content">
+      <div class="input" >
+         <label for="height">Weight(kg)</label>
+        <input class="input" type="text" name="weight" id="weight" placeholder="in kilograms (kg)"><br><br>
+        <label for="weight">Height(m)</label>
+        <input class="input" type="text" name="height" id="height" placeholder="in meters (m)"><br><br>
+       
+        
+      </div>
+    
+      <div class="input">
+        <label class="myLabel" for="gender">Gender</label>
+        <select name="gender" id="genderId" onclick="disableInput()">
+        <option value="male" id="male">Male</option>
+        <option value="female" id="female">Female</option>
+    </select>
+    <label class="myLabel" for="age">Age</label>
+        <input class="input" type="text" name="age" id="age" >
+        <br><br>
+        <button id="bmi" onclick="myBMI()">Generate BMI</button><br><br>
+    </div>
+
+ 
+</select>
+
+<label for="BMI">BMI</label>
+<input class="input" type="text" id="outputBmi" disabled>
+<div id="secIn">
+<label for="BMI">Ideal BMI</label>
+<input class="input" type="text" id="IdealBmi" disabled>
+</div><br><br>
+<div id="comment"></div><br>
+<button id="clear" onclick="clear_inputs()">clear</button>
+</div>
+  <script  src="main.js"></script>
+
+</body>
+</html>
